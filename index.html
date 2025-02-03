@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    @font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  @font-face {
+    font-family: jeju hanra;
+    src: url('/fonts/jeju.ttf');
+  }
+  .navbar { padding-top: 10px; padding-bottom: 10px; border: 0; border-radius: 0; margin-bottom: 0; font-size: 17px; letter-spacing: 4px; }
+  .navbar-nav li a:hover { color: #2e7c94 !important; }
+
+    .bg-1 {
+      background-color: #2e7c94;
+      color: #fff;
+    }
+    .img-circle {
+      width: 200px;
+      height: 200px;
+    }
+    .bg-2 {
+    background-color: #474e5d; 
+    color: #ffffff;
+  }
+  .bg-3 {
+    background-color: #527769; 
+    color: #d8dbda;
+  }
+  .bg-4 {
+    background-color: #ffffff; 
+    color: #000000;
+  }
+
+  .container-fluid {
+  padding: 70px 0px;
+}
+
+
+.bg-6 {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+div [class*=col-sm] {
+  box-sizing: border-box;
+  margin: 15px 0px;
+} 
+.margin {margin-bottom: 45px;}
+/* 폰트 */
+/* body { font-family: 경기천년바탕; font-size: 2rem; font-weight: bold; } */
+#menu02 p { font-family: GowunDodum-Regular; font-size: 1.5rem; font-weight: bold;}
+
+@media screen and (max-width:767px) {
+  #portlist p { margin-top: 30px; }
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#menu01">소개</a></li>
+          <li><a href="#menu02">포트폴리오</a></li>
+          <li><a href="#menu03">연락처</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid bg-1 text-center">
+    <h3 class="margin">김재용의 Portfolio</h3>
+    <img src="/img/face001.png" alt="me" class="img-circle">
+    <h3>저의 정보나 완성 작품들을 볼 수 있습니다.</h3>
+  </div>
+  <div class="container-fluid bg-2 text-center" id="menu01">
+    <h3>Profile</h3>
+    <p>백엔드 개발자가 되기 위해 공부 중 입니다.</p>
+    <a href="https://github.com/whale921" class="btn btn-default btn-lg btn-sm" id="btn001">깃허브로 이동</a>
+  </div>
+  <div class="container-fluid bg-4 text-center"id="menu02">
+      <h3 id="portlist" class="margin">포트폴리오 목록</h3>
+      <div class="row">
+        <div class="col-sm-3">
+          <p>브랜드 홍보 페이지</p>
+          <img src="/img/b1.jpg" alt="Image"class="img-responsive" style="width:100%">
+        </div>
+        <div class="col-sm-3">
+          <p>기아자동차 홈페이지 데모</p>
+          <img src="/img/b2.jpg" alt="Image"class="img-responsive" style="width:100%">
+        </div>
+        <div class="col-sm-3">
+          <p>자바 학사관리 데모</p>
+          <img src="/img/b3.jpg" alt="Image"class="img-responsive" style="width:100%">
+        </div>
+        <div class="col-sm-3">
+          <p>Toy Project</p>
+          <img src="/img/pinkbg001.png" alt="Image"class="img-responsive" style="width:100%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <p>Mini Project 1</p>
+          <img src="/img/pinkbg001.png" alt="Image"class="img-responsive" style="width:100%">
+        </div>
+        <div class="col-sm-3">
+          <p>Mini Project 2</p>
+          <img src="/img/pinkbg001.png" alt="Image"class="img-responsive" style="width:100%">
+        </div>
+        <div class="col-sm-3">
+          <p>Final Project</p>
+          <img src="/img/pinkbg001.png" alt="Image"class="img-responsive" style="width:100%">
+        </div>
+        <div class="col-sm-3">
+        </div>
+      </div>
+    </div>
+  
+  <div class="container-fluid bg-3 text-center" id="menu03">
+    <h3 class="margin">연락처</h3>
+    <p>rarenote@naver.com</p>
+    <p>카카오톡 rarenote</p>
+  </div>
+  <footer class="container-fluid bg-6 text-center">
+    
+  </footer>
+</body>
+</html>
