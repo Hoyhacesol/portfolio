@@ -1,227 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chelly(재용)의 포트폴리오</title>
 
-  <style>
-    @font-face {
-    font-family: 'GowunDodum-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-  @font-face {
-    font-family: 'Gyeonggi_Title_Medium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Gyeonggi_Batang_Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
-
-  html { font-size: 20px; }
-  .navbar { padding-top: 10px; padding-bottom: 10px; border: 0; border-radius: 0; margin-bottom: 0; font-size: 17px; letter-spacing: 4px; }
-  .navbar-nav li a:hover { color: #2e7c94 !important; }
-
-    .bg-1 {
-      background-color: rgb(255, 127, 68);
-      color: #fff;
-    }
-    .img-circle {
-      width: 200px;
-      height: 200px;
-    }
-    .bg-2 {
-    background-color: #474e5d; 
-    color: #ffffff;
-  }
-  .bg-3 {
-    background-color: rgb(255, 127, 68);
-    color: #d8dbda;
-  }
-  .bg-4 {
-    background-color: #ffffff; 
-    color: #000000;
-  }
-
-  .container-fluid {
-  padding: 70px 0px;
-}
-
-
-.bg-6 {
-  background-color: #2f2f2f;
-  color: #ffffff;
-}
-div [class*=col-sm] {
-  box-sizing: border-box;
-  margin: 15px 0px;
-} 
-.margin {margin-bottom: 45px;}
-
-/* 폰트 */
-.headin { font-family: Gyeonggi_Title_Medium; font-size: 1.75rem; }
-.portname,.modal-title { font-family: GowunDodum-Regular; font-size: 1.15rem; font-weight: bold;}
-.modal-body { font-family: NanumSquare; font-size: 1rem; font-weight: normal;}
-
-
-.portbtn { margin-top: 12px; color: azure; background-color: #2f2f2f; border: none; transition: 600ms; width: 100px; height: 40px; font-size: 0.9rem; border-radius: 4.56px;} 
-.portbtn:hover { background-color: #2f2f2f; color: azure; text-shadow: 0 0 4px rgb(236, 222, 183); }
-/* 미디어 쿼리 */
-@media screen and (max-width:767px) {
-  #portlist p { margin-top: 30px; }
-}
-  </style>
-</head>
-<body>
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Home</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#menu01">소개</a></li>
-          <li><a href="#menu02">포트폴리오</a></li>
-          <li><a href="#menu03">연락처</a></li>
-        </ul>
-      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- 사이드 바 -->
+    <div class="sidebar">
+      <ul>
+        <li><a href="#intro" class="active">INTRO</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+      </ul>
     </div>
-  </nav>
-  <div class="container-fluid bg-1 text-center">
-    <h3 class="margin headin">김재용의 Portfolio</h3>
-    <img src="img/face_blank.png" alt="me" class="img-circle">
-    <h3>저의 정보나 완성 작품들을 보실 수 있습니다.</h3>
-  </div>
-  <div class="container-fluid bg-2 text-center" id="menu01">
-    <h3 class="headin">Profile</h3>
-    <p>백엔드 개발자가 되기 위해 공부 중 입니다.</p>
-    <a href="https://github.com/whale921" class="btn btn-default btn-lg btn-sm" id="btn001" target="_blank">깃허브로 이동</a>
-  </div>
-  <div class="container-fluid bg-4 text-center"id="menu02">
-      <h3 id="portlist" class="margin headin">포트폴리오 목록</h3>
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="portname">브랜드 홍보 페이지</p>
-          <a href="https://hoyhacesol.github.io/tesla-demo/" target="_blank"><img src="img/port002.png" alt="Image"class="img-responsive" style="width:100%"></a>
-          <div>
-            <button type="button" class="portbtn" data-toggle="modal" data-target="#myModal">설명</button>
-            <div class="modal fade" id="myModal" role="dialog">
-             <div class="modal-dialog">
-             <div class="modal-content">
-             <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
-             <h4 class="modal-title">브랜드 홍보 페이지</h4>
-           </div>
-          <div class="modal-body">
-            <p> 미국의 자동차 회사 Tesla의 홍보 페이지를 제작해 보았습니다.<br>
-                html으로 기본적인 구조를 잡은 후 배경화면으로 테슬라의 자동차 Model 3의 영상을 넣고, skewX속성을 사용해 일반적 직선 형태가 아닌 대각 형태의 네비게이션 바를 사용했습니다.<br>
-                중앙에는 드롭다운 목록을 사용해 자동차의 옵션을 고를 수 있게 하였고, 오른쪽 아래에는 무한 애니메이션을 통해 방문자의 커서를 유도하는 효과를 넣었습니다.<br>
-                사용자의 커서가 닿게 되면 추가적인 컨텐츠 메뉴들이 열리게 되며, 해당 메뉴에는 동영상·사진을 통한 링크나 뉴스 내용이 담긴 Carousel을 사용했습니다.</p>
-          </div>
-          <div class="modal-footer">
-          <a href="https://hoyhacesol.github.io/tesla-demo/" target="_blank"><div class="btn btn-success">페이지 보기</div></a>
-          </div>
-          </div>
-          </div>
-          </div>
+
+    <!-- 메인 컨텐츠  -->
+    <div class="main-content">
+      <!-- sec.1 -->
+      <section id="intro" class="sectiondiv">
+        <img src="img/test_ot1.png" />
+        <div class="content">
+          <div class="intro-titlebox"><span class="intro-title">Chelly</span><span class="intro-title2">(재용)</span></div>
+          <div class="intro-textbox">
+            <span class="intro-text">배우는 것을 좋아하고, 어제보다 나은 자신이 되기 위해 노력하고 있습니다.</span>
           </div>
         </div>
-        <div class="col-sm-3">
-          <p class="portname">쿠팡이츠 데모</p>
-          <a href="https://hoyhacesol.github.io/coupangeats/" target="_blank"><img src="img/port001.png" alt="Image"class="img-responsive" style="width:100%"></a>
-          <div>
-            <button type="button" class="portbtn" data-toggle="modal" data-target="#myModal2">설명</button>
-            <div class="modal fade" id="myModal2" role="dialog">
-             <div class="modal-dialog">
-             <div class="modal-content">
-             <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
-             <h4 class="modal-title">쿠팡이츠 홈페이지 데모</h4>
-           </div>
-          <div class="modal-body">
-            <p> 2025년 1월 기준의 쿠팡이츠 홈페이지를 따라 만들어 보았습니다.<br>
-                bootstrap을 사용해 빠르고 간편하게 만들 수 있었으며, slick slider를 사용해 자동으로 브랜드들이 회전하는 기능을 새롭게 알게 되어 즐거웠습니다.<br>
-                또한 이 페이지는 반응형 웹 페이지로, 너비가 일정 이하로 작아지면 이미지나 메뉴의 구성 등이 그에 맞게 변하는 페이지입니다.</p>
+      </section>
+      <!-- sec.2 -->
+      <section id="info" class="sectiondiv">
+        <div class="section-title">Info</div>
+        <div class="content">
+          <div class="contact-info">
+            Phone. <b>010-8777-2840</b>
+            <span class="separator">|</span>
+            EMAIL. <b>rarenote@naver.com</b>
           </div>
-          <div class="modal-footer">
-          <a href="https://hoyhacesol.github.io/coupangeats/" target="_blank"><div class="btn btn-success">페이지 보기</div></a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-        </div>
-          <div class="col-sm-3">
-          <p class="portname">미니프로젝트1 카카오뱅크</p>
-          <a href="https://hoyhacesol.github.io/GIT_MiniProject1/index.html" target="_blank"><img src="img/port003.png" alt="Image"class="img-responsive" style="width:100%"></a>
-          <div>
-            <button type="button" class="portbtn" data-toggle="modal" data-target="#myModal3">설명</button>
-            <div class="modal fade" id="myModal3" role="dialog">
-             <div class="modal-dialog">
-             <div class="modal-content">
-             <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
-             <h4 class="modal-title">미니프로젝트1 : 카카오뱅크 데모</h4>
-           </div>
-          <div class="modal-body">
-            <p> 첫 미니프로젝트로, 각각의 조원들이 한 페이지씩 담당해 만들고, 서로 연결했습니다.<br>
-                html,css,js,jquery 및 jira와 git 등 여러 협업 툴을 사용해 보는 기회가 되었습니다.
-                저는 이 프로젝트에서 PM을 맡아 역할 분배 및 조원들의 진행 상태를 점검하고, 프로젝트 발표를 진행했습니다.<br>
-                타인과 함께 개발하는 경험을 쌓을 수 있어 좋았고, 움직이는 애니메이션 등 결과물도 만족스러웠습니다.</p>
-          </div>
-          <div class="modal-footer">
-          <a href="https://hoyhacesol.github.io/GIT_MiniProject1/index.html" target="_blank"><div class="btn btn-success">페이지 보기</div></a>
-          </div>
-          </div>
-          </div>
-          </div>
+
+          <div class="socialdiv">
+            <!-- 아이콘:깃허브 -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+              />
+            </svg>
+            <!-- 아이콘:유튜브 -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+              />
+            </svg>
           </div>
         </div>
-        <div class="col-sm-3">
-          <p class="portname">Toy Project</p>
-          <img src="img/Graaybg01.png" alt="Image"class="img-responsive" style="width:100%">
+      </section>
+      <!-- sec.3 -->
+      <section id="about">
+        <p class="section-title">SKILLS</p>
+        <div class="content">
+          <h2>About Me</h2>
+          <p>
+            저는 UI/UX 중심의 웹 개발자입니다.<br />
+            사용자 경험을 최우선으로 생각하며, 감각적인 디자인을 구현하는 데 집중합니다.
+          </p>
+          <ul>
+            <li>🎨 Figma, Adobe XD</li>
+            <li>💻 HTML, CSS, JS, React</li>
+            <li>🧠 관심 분야: 인터랙션 디자인, 애니메이션, 무드보드</li>
+          </ul>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <p class="portname">Mini Project 1</p>
-          <img src="img/Graaybg01.png" alt="Image"class="img-responsive" style="width:100%">
+      </section>
+      <!-- sec.4 -->
+      <section id="portfolio">
+        Projects
+        <div class="content projects">
+          <h2>Selected Works</h2>
+          <div class="project-list">
+            <div class="project">
+              <img src="img/project1.jpg" alt="프로젝트1" />
+              <h3>UI-it 포트폴리오 리디자인</h3>
+              <p>MyBatis 기반 사이트, GSAP 애니메이션 적용</p>
+            </div>
+            <div class="project">
+              <img src="img/project2.jpg" alt="프로젝트2" />
+              <h3>WEEKEND 여행 매거진</h3>
+              <p>TOAST UI 기반 콘텐츠 CMS 설계</p>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-3">
-          <p class="portname">Mini Project 2</p>
-          <img src="img/Graaybg01.png" alt="Image"class="img-responsive" style="width:100%">
-        </div>
-        <div class="col-sm-3">
-          <p class="portname">Final Project</p>
-          <img src="img/Graaybg01.png" alt="Image"class="img-responsive" style="width:100%">
-        </div>
-        <div class="col-sm-3">
-        </div>
-      </div>
+      </section>
     </div>
-  
-  <div class="container-fluid bg-3 text-center" id="menu03">
-    <h3 class="margin headin">연락처</h3>
-    <p>rarenote@naver.com</p>
-    <p>카카오톡 rarenote</p>
-  </div>
-  <footer class="container-fluid bg-6 text-center">
-  </footer>
-</body>
+  </body>
 </html>

@@ -1,0 +1,129 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* 폰트 */
+@font-face {
+  font-family: "NanumsquareacEB";
+  src: url(../fonts/NanumSquare_acEB.ttf);
+}
+
+@font-face {
+  font-family: "NanumsquareB";
+  src: url(../fonts/NanumSquareB.ttf);
+}
+
+@font-face {
+  font-family: "Gyeonggititle";
+  src: url(../fonts/Gyeonggi_title.ttf);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 170px;
+  height: 100vh;
+  background: teal;
+  color: white;
+  padding: 2rem 1rem;
+  z-index: 100;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 3rem;
+}
+
+.sidebar a {
+  font-family: "NanumsquareacEB";
+  font-size: 1.78rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar a.active {
+  color: rgb(115, 255, 243);
+}
+
+.main-content {
+  margin-left: 275px;
+  width: 70%;
+}
+
+/* 섹션 공통 css적용사항 */
+.sectiondiv {
+  margin-top: 45px;
+  padding-bottom: 50px;
+  border-bottom: 0.2px solid rgba(18, 116, 111, 0.288);
+}
+
+#intro {
+  margin-top: 175px;
+}
+#intro .content {
+  margin-top: 30px;
+}
+#intro .intro-title {
+  font-family: "Gyeonggititle";
+  font-size: 2.5rem;
+  color: #36c7bb;
+}
+#intro .intro-title2 {
+  font-family: "Gyeonggititle";
+  font-size: 2.35rem;
+  margin-left: 9px;
+}
+
+#intro .intro-textbox {
+  margin-top: 20px;
+}
+#intro .intro-text {
+  font-family: "NanumsquareB";
+  font-size: 1.35rem;
+}
+
+.section-title {
+  font-family: "Gyeonggititle";
+  font-size: 2.88rem;
+  color: black;
+}
+
+.contact-info {
+  margin-top: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contact-info span {
+  margin: 0 10px;
+}
+
+.contact-info b {
+  color: #239187;
+}
+
+.separator {
+  margin: 0 16px;
+  color: #aaa;
+}
+
+.socialdiv {
+  margin-top: 22px;
+}
+
+svg {
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+}
