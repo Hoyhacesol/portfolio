@@ -335,12 +335,15 @@ body {
   height: 24px;
   margin-top: 8px;
   background-color: #04aa6d;
-  border: 0.2px solid green;
+  border: 0.2px solid rgb(21, 179, 21);
   border-radius: 5px;
   color: white;
   padding: 4px 6px;
   font-family: "notosanskrR";
   font-size: 0.9rem;
+}
+.modal-pages .gopage:hover {
+  background-color: #10885c;
 }
 
 @keyframes fadeIn {
@@ -363,16 +366,35 @@ body {
   padding: 6px 14px;
   margin: 0 20px;
   border: none;
-  background-color: #c7c5c5;
+  background-color: teal;
   cursor: pointer;
   border-radius: 5px;
+  color: rgb(255, 255, 255);
 }
 .modal-controls button:hover {
-  background-color: #bbb;
+  background-color: #335c44;
 }
 
 /* 모달 컨텐츠 개별 css */
 .pfc_1 {
   width: 450px;
   height: auto;
+}
+.pfc_500 {
+  width: 500px;
+  height: auto;
+}
+.pfc_320 {
+  width: 320px;
+  height: auto;
+}
+.pfc_190 {
+  width: 225px;
+  height: 300px;
+  margin: 0px 5px;
+}
+.pfc_265 {
+  width: 300px;
+  height: auto;
+  margin: 0px 5px;
 }
