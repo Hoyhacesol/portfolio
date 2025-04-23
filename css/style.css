@@ -16,6 +16,21 @@
   src: url(../fonts/Gyeonggi_title.ttf);
 }
 
+@font-face {
+  font-family: "Righteous";
+  src: url(../fonts/Righteous-Regular.ttf);
+}
+
+@font-face {
+  font-family: "NotosanskrM";
+  src: url(../fonts/NotoSansKR-Medium.ttf);
+}
+
+@font-face {
+  font-family: "NotosanskrR";
+  src: url(../fonts/NotoSansKR-Regular.ttf);
+}
+
 body {
   margin: 0;
   display: flex;
@@ -123,7 +138,8 @@ body {
   margin-top: 22px;
 }
 
-.socialdiv a {
+.socialdiv a,
+#modalPagesContainer .modal-pages a {
   text-decoration: none !important;
   color: black;
 }
@@ -131,6 +147,11 @@ body {
   width: 60px;
   height: 60px;
   margin: 0 15px;
+}
+#modalPagesContainer .modal-pages svg {
+  width: 45px;
+  height: 45px;
+  margin: 0px 25px;
 }
 
 /* 포트폴리오 영역 */
@@ -177,6 +198,8 @@ body {
   z-index: 2;
   color: white;
   font-size: 1.2em;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .overlay-content {
@@ -215,7 +238,7 @@ body {
 }
 .portfolio-thumbnail:hover .oc6 hr {
   width: 150px;
-  box-shadow: 2px 2px 16px 3px rgb(255, 81, 0);
+  box-shadow: 2px 2px 16px 5px rgb(255, 81, 0);
 }
 
 .oc1 span,
@@ -230,9 +253,126 @@ body {
   font-size: 1.1rem;
   font-family: "NanumsquareB", sans-serif;
 }
-
+.oc6-div2 span {
+  font-size: 1.3rem;
+  font-family: "Righteous", cursive;
+}
 /* 두줄 간격조정 */
 .oc6-div2 {
   color: rgb(255, 81, 0);
   margin-top: -20px;
+}
+
+/* 모달 레이아웃 관련----------------------------------------------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  min-width: 50%;
+  max-width: 1800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #7e7a7a;
+  cursor: pointer;
+}
+.close:hover {
+  color: #444;
+}
+
+/* 수시 변경되는 모달 컨텐츠 */
+.modal-pages {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-pages.active {
+  display: block;
+}
+
+.modal-pages .desc {
+  border-top: 0.75px solid rgba(177, 168, 168, 0.616);
+  padding: 35px 0px;
+}
+.modal-pages .interfacediv {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: right;
+}
+.modal-pages h2 {
+  font-family: "NanumsquareB";
+  font-size: 1.5rem;
+}
+.modal-pages p {
+  font-family: "NotosanskrR";
+  font-size: 1rem;
+}
+
+.modal-pages .gopage {
+  text-align: center;
+  width: 80px;
+  height: 24px;
+  margin-top: 8px;
+  background-color: #04aa6d;
+  border: 0.2px solid green;
+  border-radius: 5px;
+  color: white;
+  padding: 4px 6px;
+  font-family: "notosanskrR";
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 모달-페이징 */
+.modal-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+.modal-controls button {
+  padding: 6px 14px;
+  margin: 0 20px;
+  border: none;
+  background-color: #c7c5c5;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.modal-controls button:hover {
+  background-color: #bbb;
+}
+
+/* 모달 컨텐츠 개별 css */
+.pfc_1 {
+  width: 450px;
+  height: auto;
 }

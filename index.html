@@ -23,7 +23,7 @@
 
     <!-- 메인 컨텐츠  -->
     <div class="main-content">
-      <!-- sec.1 -->
+      <!-- sec.1 소개--------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
       <section id="intro" class="sectiondiv">
         <img src="img/test_ot1.png" />
         <div class="content">
@@ -33,7 +33,7 @@
           </div>
         </div>
       </section>
-      <!-- sec.2 -->
+      <!-- sec.2 정보---------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
       <section id="info" class="sectiondiv">
         <div class="section-title">Info</div>
         <div class="content">
@@ -61,7 +61,7 @@
           </div>
         </div>
       </section>
-      <!-- sec.3 -->
+      <!-- sec.3 스킬-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
       <section id="skills" class="sectiondiv">
         <p class="section-title">Skills</p>
         <div class="content">
@@ -86,54 +86,72 @@
           </div>
         </div>
       </section>
-      <!-- sec.4 -->
+      <!-- sec.4 포트폴리오------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
       <section id="portfolio" class="sectiondiv">
         <p class="section-title">Portfolio</p>
         <div class="content">
           <div class="portfolio-container">
+            <!-- pf1. 브랜드 홍보 페이지------------------------------------------------------------------------------------------------------------------------------------------------------ -->
             <div class="portfolio-thumbnail">
-              <a
-                ><img src="img/Pftthumb_1.png" />
-                <div class="overlay">
-                  <div class="overlay-content oc1">
-                    <span>브랜드 홍보 페이지 (Tesla)</span>
-                    <hr />
-                  </div></div
-              ></a>
+              <img src="img/Pftthumb_1.png" />
+              <div class="overlay" data-project="1">
+                <div class="overlay-content oc1">
+                  <span>브랜드 홍보 페이지 (Tesla)</span>
+                  <hr />
+                </div>
+              </div>
             </div>
-            <div class="portfolio-thumbnail">
-              <a
-                ><img src="img/Pftthumb_2.png" />
-                <div class="overlay">
-                  <div class="overlay-content oc2">
-                    <span>쿠팡이츠 데모 페이지</span>
-                    <hr />
-                  </div></div
-              ></a>
+
+            <!-- 모달 -->
+            <div id="projectModal" class="modal">
+              <div class="modal-content">
+                <span class="close" id="closeModalBtn">&times;</span>
+
+                <!-- 자바스크립트 모달 내용 -->
+                <div id="modalPagesContainer"></div>
+
+                <div class="modal-controls">
+                  <button id="prevPage">◀</button>
+                  <span id="AllPage">1/2</span>
+                  <button id="nextPage">▶</button>
+                </div>
+              </div>
             </div>
+
+            <!-- pf2. 쿠팡이츠 데모 페이지------------------------------------------------------------------------------------------------------------------------------------------------------ -->
             <div class="portfolio-thumbnail">
-              <a
-                ><img src="img/Pftthumb_4.png" />
-                <div class="overlay">
-                  <div class="overlay-content oc3">
-                    <span>카카오뱅크 데모 페이지</span>
-                    <hr />
-                  </div></div
-              ></a>
+              <img src="img/Pftthumb_2.png" />
+              <div class="overlay" data-project="2">
+                <div class="overlay-content oc2">
+                  <span>쿠팡이츠 데모 페이지</span>
+                  <hr />
+                </div>
+              </div>
             </div>
+            <!-- pf3. 카카오뱅크 데모 페이지------------------------------------------------------------------------------------------------------------------------------------------------------ -->
             <div class="portfolio-thumbnail">
-              <a
-                ><img src="img/Pftthumb_3.png" />
-                <div class="overlay">
-                  <div class="overlay-content oc4">
-                    <span>JFrame: 학사관리 & 도서관리</span>
-                    <hr />
-                  </div></div
-              ></a>
+              <img src="img/Pftthumb_4.png" />
+              <div class="overlay">
+                <div class="overlay-content oc3">
+                  <span>카카오뱅크 데모 페이지</span>
+                  <hr />
+                </div>
+              </div>
             </div>
+            <!-- pf4. Java 학사관리 도서관리------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+            <div class="portfolio-thumbnail">
+              <img src="img/Pftthumb_3.png" />
+              <div class="overlay">
+                <div class="overlay-content oc4">
+                  <span>JFrame: 학사관리 & 도서관리</span>
+                  <hr />
+                </div>
+              </div>
+            </div>
+            <!-- pf5. 자작 게임 소개 페이지-------------------------------------------------------------------------------------------------------------------------------------------------------- -->
             <div class="portfolio-thumbnail">
               <a
-                ><img src="img/Pftthumb_5.png" />
+                ><img src="img/Pftthumb_5.gif" />
                 <div class="overlay">
                   <div class="overlay-content oc5">
                     <span>자작 게임 모드 다운로드 페이지</span>
@@ -141,6 +159,7 @@
                   </div></div
               ></a>
             </div>
+            <!-- pf6. 웹진 & 커뮤니티 WEEKEND ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
             <div class="portfolio-thumbnail">
               <a
                 ><img src="img/Pftthumb_6.png" />
