@@ -163,6 +163,54 @@ body {
   /* gap: 20px; */
 }
 
+.portfoliotitle {
+  display: flex;
+}
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  align-content: center;
+}
+.tooltipiconcenter {
+  margin: auto 0px;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 1.2s ease;
+}
+.tooltipiconcenter.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tooltip-container svg {
+  width: 25px;
+  height: 25px;
+  color: #ff0000;
+}
+.tooltip-text {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 999;
+  top: -25px; /* 아이콘 위에 표시 */
+  left: 96px;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.tooltipiconcenter:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 .portfolio-thumbnail {
   width: 22.5%;
   aspect-ratio: 1 / 1;
@@ -375,7 +423,8 @@ body {
   background-color: #335c44;
 }
 
-/* 모달 컨텐츠 개별 css */
+/* 모달 컨텐츠 개별 css - 미디어 크기 조정 */
+
 .pfc_1 {
   width: 450px;
   height: auto;
@@ -398,3 +447,5 @@ body {
   height: auto;
   margin: 0px 5px;
 }
+
+/* 모달 컨텐츠 개별 css -  미디어 margin 조절 */

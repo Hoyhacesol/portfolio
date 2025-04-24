@@ -141,9 +141,51 @@ $(document).ready(function () {
     }
   });
 
+  $modal.on("click", function (e) {
+    if (e.target === this) {
+      $modal.css("display", "none");
+    }
+  });
+
   $(window).on("keydown", function (e) {
+    //  모달 display상태일 경우
+    if ($modal.css("display") !== "flex") return;
+
     if (e.key === "Escape") {
       $modal.css("display", "none");
     }
+
+    if (e.key === "ArrowRight") {
+      if (currentPage < currentProjectPages.length - 1) {
+        currentPage++;
+        showPage(currentPage);
+      }
+    }
+
+    if (e.key === "ArrowLeft") {
+      if (currentPage > 0) {
+        currentPage--;
+        showPage(currentPage);
+      }
+    }
+  });
+
+  // 툴팁 출력 관련---------------------------------------------------------------------------------------------------------------------------------------
+  $(document).ready(function () {
+    $(".tooltipiconcenter").each(function () {
+      let shown = false;
+
+      $(this).on("mouseenter", function () {
+        if (!shown) {
+          const $tooltipText = $(this).find(".tooltip-text");
+          $tooltipText.css("opacity", "1");
+          shown = true;
+
+          setTimeout(() => {
+            $(this).addClass("fade-out");
+          }, 8500);
+        }
+      });
+    });
   });
 });
