@@ -188,4 +188,10 @@ $(document).ready(function () {
       });
     });
   });
+
+  // java .exe 다운로드
+  $(document).on("click", ".pf4download", function (e) {
+    e.preventDefault();
+    window.open("https://drive.google.com/uc?export=download&id=1IL7hdLsDkSgHxDYaH5vfN5esiaSpJtUo", "_blank");
+  });
 });

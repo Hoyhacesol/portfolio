@@ -166,6 +166,8 @@ body {
 .portfoliotitle {
   display: flex;
 }
+
+/* 툴팁 (안내 후 삭제) */
 .tooltip-container {
   position: relative;
   display: inline-block;
@@ -198,7 +200,7 @@ body {
   white-space: nowrap;
   position: absolute;
   z-index: 999;
-  top: -25px; /* 아이콘 위에 표시 */
+  top: -25px;
   left: 96px;
   transform: translateX(-50%);
   opacity: 0;
@@ -331,6 +333,7 @@ body {
   min-width: 50%;
   max-width: 1800px;
   max-height: 90vh;
+  min-height: 160px;
   overflow-y: auto;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -392,6 +395,23 @@ body {
 }
 .modal-pages .gopage:hover {
   background-color: #10885c;
+}
+
+.modal-pages .pf4download {
+  text-align: center;
+  width: 80px;
+  height: 43px;
+  margin-top: -3px;
+  background-color: #030303;
+  border: 0.2px solid rgb(185, 185, 185);
+  border-radius: 5px;
+  color: white;
+  padding: 4px 6px;
+  font-family: "notosanskrR";
+  font-size: 0.85rem;
+}
+.modal-pages .pf4download:hover {
+  background-color: #243b34;
 }
 
 @keyframes fadeIn {
