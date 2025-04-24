@@ -449,14 +449,6 @@ body {
   width: 450px;
   height: auto;
 }
-.pfc_500 {
-  width: 500px;
-  height: auto;
-}
-.pfc_320 {
-  width: 320px;
-  height: auto;
-}
 .pfc_190 {
   width: 225px;
   height: 300px;
@@ -467,5 +459,20 @@ body {
   height: auto;
   margin: 0px 5px;
 }
-
+.pfc_320 {
+  width: 320px;
+  height: auto;
+}
+.pfc_500 {
+  width: 500px;
+  height: auto;
+}
+.pfc_600 {
+  width: 600px;
+  height: auto;
+}
+.pfc_1000 {
+  width: 1000px;
+  height: auto;
+}
 /* 모달 컨텐츠 개별 css -  미디어 margin 조절 */
