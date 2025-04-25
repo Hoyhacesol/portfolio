@@ -143,6 +143,8 @@ body {
   text-decoration: none !important;
   color: black;
 }
+
+/* info-아이콘 */
 .socialdiv svg {
   width: 60px;
   height: 60px;
@@ -165,8 +167,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  /* padding: 20px; */
-  /* gap: 20px; */
 }
 
 .portfoliotitle {
@@ -272,6 +272,7 @@ body {
   transition: width 0.4s ease, box-shadow 0.3s ease;
 }
 
+/* 오버레이 특수효과 */
 .portfolio-thumbnail:hover .oc1 hr {
   width: 150px;
   box-shadow: 2px 2px 16px 3px red;
