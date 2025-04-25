@@ -148,10 +148,16 @@ body {
   height: 60px;
   margin: 0 15px;
 }
+.socialdiv svg:hover {
+  color: rgb(13, 192, 192);
+}
 #modalPagesContainer .modal-pages svg {
   width: 45px;
   height: 45px;
   margin: 0px 25px;
+}
+#modalPagesContainer .modal-pages svg:hover {
+  color: rgb(13, 192, 192);
 }
 
 /* 포트폴리오 영역 */
