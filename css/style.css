@@ -419,6 +419,7 @@ body {
   padding: 4px 6px;
   font-family: "notosanskrR";
   font-size: 0.85rem;
+  transition: 200ms;
 }
 .modal-pages .pf4download:hover {
   background-color: #243b34;
