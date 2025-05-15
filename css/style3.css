@@ -190,16 +190,13 @@ body {
   flex-wrap: wrap;
 }
 
-.portfoliotitle {
-  display: flex;
-}
-
 /* 툴팁 (안내 후 삭제) */
 .tooltip-container {
   position: relative;
   display: inline-block;
   margin-left: 15px;
   align-content: center;
+  display: none;
 }
 .tooltipiconcenter {
   margin: auto 0px;
@@ -241,7 +238,7 @@ body {
 }
 
 .portfolio-thumbnail {
-  width: 22.5%;
+  width: 100%;
   aspect-ratio: 1 / 1;
   background-color: white;
   display: flex;
@@ -251,6 +248,7 @@ body {
   position: relative;
   overflow: hidden;
   margin-bottom: 25px;
+  box-sizing: border-box;
 }
 
 .portfolio-thumbnail img {
