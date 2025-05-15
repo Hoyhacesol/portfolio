@@ -1,3 +1,5 @@
+/* 스타일 시트 - width <470 (스마트폰 기준 화면) */
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 /* 폰트 */
@@ -47,6 +49,7 @@ body {
   color: white;
   padding: 2rem 1rem;
   z-index: 100;
+  display: none;
 }
 
 .sidebar ul {
@@ -70,24 +73,31 @@ body {
   color: rgb(115, 255, 243);
 }
 
+/* 메인 컨텐츠 영역 */
 .main-content {
-  margin-left: 275px;
-  width: 70%;
   max-width: 1500px;
 }
 
 /* 섹션 공통 css적용사항 */
 .sectiondiv {
-  margin-top: 45px;
-  padding-bottom: 50px;
-  border-bottom: 0.2px solid rgba(18, 116, 111, 0.288);
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 0.35px solid rgba(18, 116, 111, 0.388);
 }
 
 #intro {
-  margin-top: 175px;
+  margin-top: 4rem;
 }
+
+.introimg_wrap {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+}
+
 #intro .content {
-  margin-top: 30px;
+  margin-top: 2rem;
+  text-align: center;
 }
 #intro .intro-title {
   font-family: "Gyeonggititle";
@@ -101,28 +111,36 @@ body {
 }
 
 #intro .intro-textbox {
-  margin-top: 20px;
+  margin-top: 1.67rem;
+  padding: 0 1.5rem;
 }
 #intro .intro-text {
   font-family: "NanumsquareB";
-  font-size: 1.35rem;
+  font-size: 1.25rem;
 }
 
 .section-title {
   font-family: "Gyeonggititle";
   font-size: 2.88rem;
   color: black;
+  text-align: center;
 }
 
 .contact-info {
   margin-top: 15px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   color: #555;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: normal; /* 줄바꿈 허용 */
+  gap: 6px; /* 위아래 간격 */
 }
 
 .contact-info span {
-  margin: 0 10px;
+  display: none;
 }
 
 .contact-info b {
@@ -136,6 +154,7 @@ body {
 
 .socialdiv {
   margin-top: 22px;
+  text-align: center;
 }
 
 .socialdiv a,
