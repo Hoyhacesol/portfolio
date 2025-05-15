@@ -322,11 +322,11 @@ body {
 .oc3 span,
 .oc4 span,
 .oc6 span {
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   font-family: "NanumsquareB", sans-serif;
 }
 .oc5 span {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-family: "NanumsquareB", sans-serif;
 }
 .oc6-div2 span {
@@ -336,7 +336,7 @@ body {
 /* 두줄 간격조정 */
 .oc6-div2 {
   color: rgb(255, 81, 0);
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 /* 모달 레이아웃 관련----------------------------------------------- */
@@ -475,33 +475,43 @@ body {
 /* 모달 컨텐츠 개별 css - 미디어 크기 조정 */
 
 .pfc_1 {
-  width: 450px;
+  width: 100%;
   height: auto;
 }
 .pfc_190 {
-  width: 225px;
-  height: 300px;
-  margin: 0px 5px;
+  width: 100%;
+  height: auto;
+  margin: 25px 0;
 }
 .pfc_265 {
-  width: 300px;
+  width: 100%;
   height: auto;
-  margin: 0px 5px;
+  margin: 25px 0;
 }
 .pfc_320 {
-  width: 320px;
+  width: 100%;
   height: auto;
 }
 .pfc_500 {
-  width: 500px;
+  width: 100%;
   height: auto;
 }
 .pfc_600 {
-  width: 600px;
+  width: 100%;
   height: auto;
 }
 .pfc_1000 {
-  width: 1000px;
+  width: 100%;
+  height: auto;
+}
+
+.pfc_custom {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
   height: auto;
 }
 /* 모달 컨텐츠 개별 css -  미디어 margin 조절 */
