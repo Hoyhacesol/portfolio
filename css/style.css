@@ -222,7 +222,7 @@ body {
 }
 
 .portfolio-thumbnail {
-  width: 22.5%;
+  width: 24%;
   aspect-ratio: 1 / 1;
   background-color: white;
   display: flex;
