@@ -219,13 +219,13 @@ body {
 
 /* 자격증 */
 .certificate_1 h2 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   background-color: black;
   border-radius: 12px;
-  width: 163px;
   color: azure;
   padding: 2px 5px;
   margin: 0 auto;
+  width: fit-content;
 }
 .certificate_1 p {
   color: rgb(48, 47, 40);
